@@ -98,3 +98,34 @@
         align-items: flex-start;
     }
 }
+/* --- Naya Code Yahan Se Start --- */
+
+/* Badge ko image ke andar red dikhane ke liye */
+.product-card {
+    position: relative; 
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff0000 !important; /* Pakka Red color */
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+/* 5000 par line (cut) lagane ke liye styling */
+.old-price del {
+    color: #999; 
+    margin-right: 10px;
+    text-decoration: line-through; /* Ye line lagaye ga */
+}
+
+.price {
+    font-weight: bold;
+    color: #000;
+    margin-top: 5px;
+}
