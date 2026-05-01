@@ -157,3 +157,35 @@
         font-size: 24px; /* Heading thori choti */
     }
 }
+/* Mobile Devices ke liye Final Fix */
+@media (max-width: 768px) {
+    .product-card {
+        position: relative !important; /* Taake badge iske andar hi rahe */
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .img-container {
+        height: 350px !important;
+        position: relative;
+    }
+
+    /* Badge Fix for Mobile */
+    .badge {
+        position: absolute !important;
+        top: 10px !important;
+        left: 10px !important;
+        background-color: #ff0000 !important;
+        z-index: 20 !important;
+        display: block !important;
+    }
+
+    .category-menu ul {
+        gap: 8px;
+        font-size: 10px;
+    }
+}
