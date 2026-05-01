@@ -1,15 +1,44 @@
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 products ek line mein */
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.img-container {
+    width: 100%;
+    height: 550px; /* J. jaisa tall size */
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Image stretch nahi hogi */
+}
 .category-menu {
     display: flex;
-    justify-content: space-between;
-    padding: 15px 50px;
-    border-bottom: 1px solid #ddd;
+    justify-content: space-between; /* Is se Filter side par chala jayega */
     align-items: center;
-    gap: 20px;
+    padding: 10px 20px;
+    border-top: 1px solid #eee;
+    font-size: 12px;
 }
-.category-menu ul { 
-    display: flex; 
-    list-style: none; 
-    gap: 25px; 
+
+.category-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
     padding: 0;
+    margin: 0;
 }
-.old-price { text-decoration: line-through; color: #888; margin-right: 5px; font-weight: normal; }
+
+.category-menu ul li strong {
+    text-decoration: underline; /* View All ke niche line */
+    cursor: pointer;
+}
+
+.filter-sort {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
